@@ -1,0 +1,456 @@
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+aside,
+nav,
+footer,
+header,
+section {
+  display: block;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+img {
+  vertical-align: top;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+@font-face {
+  font-family: 'icons';
+  src: url("../fonts/icons.eot?15c6e");
+  src: url("../fonts/icons.eot?15c6e#iefix") format("embedded-opentype"), url("../fonts/icons.ttf?15c6e") format("truetype"), url("../fonts/icons.woff?15c6e") format("woff"), url("../fonts/icons.svg?15c6e#icons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"]::before,
+[class*=" icon-"]::before {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icons' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-facebook:before {
+  content: "\e900";
+}
+
+.icon-instagram:before {
+  content: "\e901";
+}
+
+.icon-vk:before {
+  content: "\e902";
+}
+
+.icon-youtube:before {
+  content: "\e903";
+}
+
+@font-face {
+  font-family: "PlayfairDisplay";
+  font-display: swap;
+  src: url("../fonts/PlayfairDisplay-Bold.woff") format("woff"), url("../fonts/PlayfairDisplay-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PlayfairDisplay";
+  font-display: swap;
+  src: url("../fonts/PlayfairDisplay-Regular.woff") format("woff"), url("../fonts/PlayfairDisplay-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+.wrapper__slide {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+  min-width: 0;
+  overflow: hidden;
+  color: #000;
+}
+
+.wrapper__slide__bcg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.wrapper__slide__bcg img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: .8;
+}
+
+.swiper {
+  max-width: 100%;
+  min-height: 100vh;
+  background-color: #fff;
+}
+
+.slide__wrapper {
+  margin: 0 auto;
+}
+
+.slide-lic {
+  position: relative;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.slide-lic__title {
+  text-align: center;
+  line-height: 130%;
+}
+
+.slide-lic__text {
+  text-align: center;
+  font-size: 34px;
+}
+
+.slide-lic__image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.slide-lic__image img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 70%;
+     object-position: 70%;
+}
+
+.slide-sec {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 0 15px;
+}
+
+.slide-sec__title {
+  text-align: center;
+  line-height: 130%;
+}
+
+.slide-sec__text {
+  text-align: center;
+  max-width: 75%;
+  margin: 0 auto;
+  line-height: 140%;
+}
+
+.slide-sec__text p {
+  margin-bottom: 30px;
+}
+
+.slide-sec__text *:last-child {
+  margin-bottom: 0;
+}
+
+.slide-sec__image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.slide-sec__image img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 65% 60%;
+     object-position: 65% 60%;
+  opacity: 1;
+}
+
+.bottom-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.bottom-slide__day {
+  margin: 0 20px;
+}
+
+.gif {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 0;
+  left: 0;
+}
+
+.seating {
+  padding: 50px 0;
+}
+
+.seating__container {
+  padding: 0 15px;
+}
+
+.seating__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border: 1px solid rgba(0, 0, 0, 0.089);
+  padding: 0 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.seating__column {
+  text-align: center;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  margin-bottom: 30px;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+  min-width: 320px;
+}
+
+body {
+  margin: 0;
+  font-family: "PlayfairDisplay";
+  font-size: 32px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  line-height: 1;
+  background: #b8b8b8;
+}
+
+.wrapper {
+  background-color: #fff;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+._container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 100%;
+}
+
+.btn {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.amp {
+  font-family: Arial;
+  line-height: 0;
+  margin: 50px 0;
+}
+
+h1 {
+  font-size: 48px;
+  font-size: calc(32px + (48 - 32) * ((100vw - 320px) / (1920 - 320)));
+  line-height: 130%;
+  font-weight: 400;
+  text-decoration: underline;
+  margin-bottom: 30px;
+}
+
+.seating p {
+  text-transform: capitalize;
+  font-size: 24px;
+  font-size: calc(18px + (28 - 18) * ((100vw - 320px) / (1920 - 320)));
+  line-height: 180%;
+  font-weight: 400;
+}
+
+@media (min-width: 1920px) {
+  .slide-lic__title {
+    font-size: 60px;
+  }
+
+  .slide-lic__text {
+    font-size: 66px;
+  }
+
+  .slide-sec__title {
+    font-size: 60px;
+  }
+
+  .slide-sec__text {
+    font-size: 34px;
+  }
+
+  .data {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 767px) {
+  .slide-sec__text {
+    max-width: 95%;
+  }
+}
+
+@media (max-width: 570px) {
+  .seating__column {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 1920px) {
+  .slide-lic__title {
+    font-size: calc(30px + (60 - 30) * ((100vw - 320px) / (1290 - 320)));
+  }
+
+  .slide-lic__text {
+    font-size: calc(36px + (66 - 36) * ((100vw - 320px) / (1290 - 320)));
+  }
+
+  .slide-sec__title {
+    font-size: calc(30px + (60 - 30) * ((100vw - 320px) / (1290 - 320)));
+  }
+
+  .slide-sec__text {
+    font-size: calc(18px + (34 - 18) * ((100vw - 320px) / (1290 - 320)));
+  }
+
+  .data {
+    font-size: calc(14px + (32 - 14) * ((100vw - 320px) / (1920 - 320)));
+  }
+}
